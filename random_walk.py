@@ -1,12 +1,21 @@
 import Tkinter as Tk
 from timer import SimpleTimer 
 from random import randint
+import sys
 
 dt = 0.1
 v = 1
 canvas_h = 700.
 canvas_w = 700.
 
+if len(sys.argv) > 1:
+    dt = float(int(sys.argv[1]) /10.)
+    v = int(sys.argv[2])
+else:
+    print "Try with arguments: 'python random_walk.py 10 10' for dt = 1.0, len = 10"
+
+    
+print dt, v    
 n = 0 # number of steps
 sx = 0. # sum of dx
 sy = 0. # sum of dy
