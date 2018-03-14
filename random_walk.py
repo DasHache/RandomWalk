@@ -3,7 +3,7 @@ from timer import SimpleTimer
 from random import randint
 import sys
 
-dt = 0.1
+dt = 0.001
 v = 1
 canvas_h = 700.
 canvas_w = 700.
@@ -36,7 +36,7 @@ axis = 'x'
 # labels
 
 sv = Tk.StringVar()
-label = Tk.Label(root, textvariable=sv, anchor='w', width=100, font=("Consolas", 16))
+label = Tk.Label(root, textvariable=sv, anchor='w', width=60, font=("Consolas", 16))
 label.pack()
 
 
